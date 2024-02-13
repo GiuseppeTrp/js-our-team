@@ -18,57 +18,51 @@ let team= [
         name: "Wayne",
         lastName: "Barnett",
         role: "Founder & CEO",
-        img: "wayne-barnett-founder-ceo.jpg"
+        img: "./img/wayne-barnett-founder-ceo.jpg"
     },
     {
         name: "Angela",
         lastName: "Caroll",
         role: "Chief Editor",
-        img: "wayne-barnett-founder-ceo.jpg"
+        img: "./img/wayne-barnett-founder-ceo.jpg"
     },
     {
         name: "Walter",
         lastName: "Gordon",
         role: "Office Manager",
-        img: "wayne-barnett-founder-ceo.jpg"
+        img: "./img/wayne-barnett-founder-ceo.jpg"
     },
     {
         name: "Angela",
         lastName: "Lopez",
         role: "Social Media Manager",
-        img: "wayne-barnett-founder-ceo.jpg"
+        img: "./img/wayne-barnett-founder-ceo.jpg"
 
     },
     {
         name: "Scott",
         lastName: "Estrada",
         role: "Developer",
-        img: "wayne-barnett-founder-ceo.jpg"
+        img: "./img/wayne-barnett-founder-ceo.jpg"
 
     },
     {
         name: "Barbara",
         lastName: "Ramos",
         role: "Graphic Designer",
-        img: "wayne-barnett-founder-ceo.jpg"
+        img: "./img/wayne-barnett-founder-ceo.jpg"
 
     }
 ];
 
 
-console.log("1: ",team[0]);
-console.log("2: ",team[1]);
-console.log("3: ",team[2]);
-console.log("4: ",team[3]);
-console.log("5: ",team[4]);
-console.log("6: ",team[5]);
 
-
-
-
-
-
-
-
-
+// Ciclo attraverso l'array dei membri del team
+for (let i = 0; i < team.length; i++) {
+    // Ciclo attraverso le proprietà di ciascun oggetto 
+    for (let key in team[i]) {
+        // Aggiunta delle informazioni di ogni oggetto come riga  nell' ID "result"
+        document.getElementById("result").innerHTML += key + ": " + team[i][key] + "<br>";
+    }
+}
 
