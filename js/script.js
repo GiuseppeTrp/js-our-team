@@ -56,6 +56,16 @@ let team= [
 ];
 
 
+console.log("1: ",team[0]);
+console.log("2: ",team[1]);
+console.log("3: ",team[2]);
+console.log("4: ",team[3]);
+console.log("5: ",team[4]);
+console.log("6: ",team[5]);
+
+
+
+
 
 
 
